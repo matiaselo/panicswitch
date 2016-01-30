@@ -16,9 +16,6 @@
 
           $.getJSON(bridge_url + "/lights", function(d) {
             lights = d;
-            console.log(lights)
-
-            $("h3#bridge-info").text(bridge_ip + " | " + Object.keys(lights).length + " lights");
           });
         });
 
@@ -27,7 +24,6 @@
             "type": "PUT",
             "data": '{"on":true}',
           });
-          console.log("on");
         })
 
         $(".off").click(function() {
@@ -35,7 +31,6 @@
             "type": "PUT",
             "data": '{"on":false}',
           });
-          console.log("off");
         })
       })
     </script>
@@ -45,6 +40,5 @@
   <body>
     <a href="#" class="button on">On</a>
     <a href="#" class="button off">Off</a>
-    <h3 id="bridge-info"></h3>
   </body>
 </html>

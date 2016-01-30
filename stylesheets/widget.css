@@ -7,12 +7,6 @@ body {
     font-family: 'StatusBoardFont';
 }
 
-h3#bridge-info {
-    font-size: 0.5em;
-    color: white;
-    text-align: center;
-}
-
 .button {
     width: 100%;
     height: 40%;
