@@ -1,16 +1,15 @@
 @font-face {
-    font-family: "Roadgeek2005SeriesD";
-    src: url("http://panic.com/fonts/Roadgeek 2005 Series D/Roadgeek 2005 Series D.otf");
+    font-family: "StatusBoardFont";
 }
 
 body {
     color: white;
-    font-family: 'Roadgeek2005SeriesD', sans-serif;
+    font-family: 'StatusBoardFont';
 }
 
 h3#bridge-info {
     font-size: 0.5em;
-    color: #7e7e7e;
+    color: white;
     text-align: center;
 }
 
@@ -21,7 +20,6 @@ h3#bridge-info {
     margin-bottom: 15px;
 
     font-size: 45px;
-    font-weight: bold;
     line-height: 97px;
 
     text-decoration: none;
@@ -32,27 +30,29 @@ h3#bridge-info {
 }
 
 .on {
-    box-shadow:inset 0px 1px 0px 0px #caefab;
-    background:-webkit-gradient(
-        linear, left top, left bottom,
-        color-stop(0.05, #00c200),
-        color-stop(1, #009200)
-    );
-    background-color:#00c200;
-    border:1px solid #268a16;
-    color:#306108;
-    text-shadow:1px 1px 0px #aade7c;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #5bb75b;
+    *background-color: #51a351;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+    background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+    background-image: -o-linear-gradient(top, #62c462, #51a351);
+    background-image: linear-gradient(to bottom, #62c462, #51a351);
+    background-repeat: repeat-x;
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
 .off {
-    box-shadow:inset 0px 1px 0px 0px #f29c93;
-    background:-webkit-gradient(
-        linear, left top, left bottom,
-        color-stop(0.05, #ff4900),
-        color-stop(1, #ce0100)
-    );
-    background-color:#ff4900;
-    border:1px solid #d83526;
-    color:white;
-    text-shadow:1px 1px 0px #b23e35;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #da4f49;
+    *background-color: #bd362f;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+    background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+    background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+    background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+    background-repeat: repeat-x;
+    border-color: #bd362f #bd362f #802420;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
